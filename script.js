@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const icon = document.querySelector(".fa-bars");
+  const close = document.querySelector(".fa-x");
+  const navlinks = document.querySelector('.nav-links');
+
+  icon.addEventListener("click", () => {
+      navlinks.style.display = "flex";  
+      icon.style.display = "none";       
+      close.style.display = "block";     
+  });
+  close.addEventListener("click", () => {
+      navlinks.style.display = "none";  
+      icon.style.display = "block";      
+      close.style.display = "none";      
+  });  
+});
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -26,3 +46,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+

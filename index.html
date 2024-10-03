@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -18,20 +18,19 @@
                          <h5 >web_dev</h5>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#head">.home</a></li>
+                    <li><a href="index.html">.home</a></li>
                     <li><a href="about.html">.about</a></li>
                     <li><a href="portfolio.html">.portfolio</a></li>
                     <li><a href="services.html">.services</a></li>
                     <li><a href="contact.html">.contact</a></li>
                     <li><a href="resume.html">.resume</a></li>
                 </ul>
-                <div class="hamburger" onclick="toggleMenu()">
-                    <i class="fas fa-bars"></i>
-                </div>
-
+         <div>
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-x" id="close-icon"></i>
+         </div>
             </nav>
         </header>
-
 
         <section id="head" >
             <div id="heading">
@@ -53,13 +52,13 @@
             <div class="acontainer">
                 <div class="cont">
                  <div id="rcontent">
-                   <p style="font-size: 25px; text-align: justify;">  <u>.....I have over 12 years of experience in  web development, with a strong  background in both front-end and back-end technologies ;</u></p>
+                   <p>  <u>.......I have over 1 year of experience in  web development, with a strong  background in both front-end and back-end technologies ;</u></p>
      <br> <br>
                  </div>     
                 </div>
-                <div class="cont" style="border-right: none;">
+                <div class="cont">
                  <div class="lcontent">
-                   <p style="font-size: 25px; text-align: justify;">  velit ex. Cras ultricies nisi eget sem mollis, a maximus felis laoreet. Nam eget ultricies urna, vel ullamcorper arcu. Quisque feugiat rhoncus arcu, a tincidunt arcu lacinia ac. Maecenas molestie vel ante in finibus. Sed sit amet ligula eros. In hac habitasse platea dictumst;</p>
+                   <p>  velit ex. Cras ultricies nisi eget sem mollis, a maximus felis laoreet. Nam eget ultricies urna, vel ullamcorper arcu. Quisque feugiat rhoncus arcu, a tincidunt arcu lacinia ac. Maecenas molestie vel ante in finibus. Sed sit amet ligula eros. In hac habitasse platea dictumst;</p>
                  </div>
                </div>
                </div>
@@ -79,19 +78,19 @@
 
         <div class="ludo-section">
             <div class="ludo-part">
-                <img src="https://images.pexels.com/photos/5710157/pexels-photo-5710157.jpeg?auto=compress&cs=tinysrgb&w=400"alt="Image 1">
-                <h3>Title 1 <a href="#"></a><i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
-                <p>Description for part 1.</p>
+                <img src="/img/be-fit website.jpeg"alt="Image 1">
+                <a href="https://be-fit-main-two.vercel.app/" style="color: aliceblue;">  <h3>Be-Fit <i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                <p>"Train Anywhere, Stay Fit Everywhere!"</p>
             </div>
             <div class="ludo-part">
-                <img src="https://images.pexels.com/photos/5710157/pexels-photo-5710157.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Image 2">
-                <h3>Title 2</h3>
-                <p>Description for part 2.</p>
+                <img src="/img/book website.jpeg" alt="Image 2">
+                <a href="#" style="color: aliceblue;">  <h3>Book Store <i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                <p> "Discover Worlds, One Page at a Time!"</p>
             </div>
             <div class="ludo-part">
-                <img src="https://images.pexels.com/photos/5710157/pexels-photo-5710157.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Image 3">
-                <h3>Title 3</h3>
-                <p>Description for part 3.</p>
+                <img src="/img/bike website.webp" alt="Image 3">
+                <a href="#" style="color: aliceblue;">  <h3>Bike store <i class="fa-solid fa-arrow-up-right-from-square"></i></h3></a>
+                <p>"Ride the Road, Embrace the Journey!"</p>
             </div>
         </div>
 
@@ -99,7 +98,7 @@
             <div class="pmain">
                 <h3>{#}</h3>
                 <h2>_services_</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt? ,Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt?,  Lorem ipsum dolor sit.</p>
             </div>
         </section>
 
@@ -166,13 +165,10 @@
     </div>
 
     <p>Copyright @ 2024 Web Developer Portfolio</p>
+
 </footer>
+
     </div>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.nav-links');
-            menu.classList.toggle('active');
-        }
-    </script>
+<script src="/script.js"></script>
 </body>
 </html>

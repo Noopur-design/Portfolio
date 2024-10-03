@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/porfolio/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <section id="main">
@@ -17,7 +17,7 @@
                 </h3 >
                      <h5 >web_dev</h5>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">.home</a></li>
                 <li><a href="about.html">.about</a></li>
                 <li><a href="portfolio.html">.portfolio</a></li>
@@ -25,6 +25,10 @@
                 <li><a href="contact.html">.contact</a></li>
                 <li><a href="resume.html">.resume</a></li>
             </ul>
+     <div>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-x" id="close-icon"></i>
+     </div>
         </nav>
     </header>
 
@@ -47,12 +51,12 @@
                <div class="contabout">
                 <div class="containleft">
                     <h3>{/}</h3>
-                    <h4>_team work</h4>
+                    <h4>Innovation</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, vero?</p>
        
              <div id="aboutleft">
                 <h3>{/}</h3>
-                <h4>_excellence</h4>
+                <h4>UX/UI</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia!</p>
              </div>
                 </div>
@@ -61,12 +65,12 @@
                <div class="contaboutright">
                 <div class="containright">
                     <h3>{!}</h3>
-                    <h4>_team work</h4>
+                    <h4>Management</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, vero?</p>
             
                     <div id="aboutright">
                         <h3>{%}</h3>
-                    <h4>_hard work</h4>
+                    <h4>SEO</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quia!</p>
                         </div>
                     </div>
@@ -123,6 +127,6 @@
 </footer>
 </section>
 
-
+<script src="/script.js"></script>
 </body>
 </html>
