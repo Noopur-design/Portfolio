@@ -161,10 +161,36 @@ body {
 
 #heading h1 {
   font-size: 60px;
-  font-weight: 800;
+  font-weight: 550;
+}
+#heading h3{
+font-size: 30px;
 }
 
-@media (max-width: 1024px) {
+
+/* about  */
+
+
+
+#content h2 {
+  font-size: 45px;
+  font-weight: 300;
+}
+#content h3 {
+  font-size: 40px;
+  color: rgb(130, 80, 171);
+}
+#content p {
+  font-size: 30px;
+  margin-top: 10px;
+  color: rgb(232, 206, 74);
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 1440px) {
   #head h1 {
     text-align: center;
     font-size: 40px;
@@ -177,7 +203,7 @@ body {
 }
 
 #content h2 {
-  font-size: 45px;
+  font-size: 55px;
   font-weight: 300;
 }
 #content h3 {
@@ -185,7 +211,7 @@ body {
   color: rgb(130, 80, 171);
 }
 #content p {
-  font-size: 16px;
+  font-size: 40px;
   margin-top: 10px;
   color: rgb(232, 206, 74);
   text-align: center;
@@ -194,17 +220,27 @@ body {
 @media (max-width: 1024px) {
   #content h2 {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 40px;
   }
   #content h3 {
-    font-size: 25px;
+    font-size: 35px;
     color: rgb(130, 80, 171);
   }
   #content p {
-    font-size: 16px;
+    font-size: 25px;
     margin-top: 10px;
     color: rgb(232, 206, 74);
     text-align: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #heading h1  {
+    text-align: center;
+    font-size: 30px;
+  }
+  #heading h3{
+    font-size: 25px;
   }
 }
 
@@ -238,6 +274,7 @@ body {
   font-family: "Bodoni Moda SC", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 30px;
 }
 
 .acontainer .lcontent {
@@ -264,6 +301,7 @@ button {
 #btn {
   margin-top: 20px;
   text-align: center;
+  font-size: 25px;
 }
 
 button a {
@@ -313,7 +351,7 @@ button a {
     font-weight: 400;
     font-style: normal;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .acontainer .lcontent {
@@ -353,8 +391,9 @@ button a {
 }
 
 .pmain p {
-  font-size: 20px;
-  margin: 20px 0;
+  max-width: 800px;
+  font-size: 25px;
+  margin: 30px auto;
   color: rgb(232, 206, 74);
   text-align: center;
 }
@@ -436,6 +475,7 @@ button a {
 }
 
 .ludo-part h3 {
+  font-size: 25px;
   margin: 10px 0 5px;
 }
 
@@ -476,10 +516,13 @@ button a {
 }
 
 .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
-  padding: 20vh;
+  /* padding: 20vh; */
   width: 100%;
-  height: 15vh;
+  height:400px;
   text-align: center;
   background-size: cover;
   background-position: center center;
@@ -598,15 +641,16 @@ button a {
 
 @media screen and (max-width: 1024px) {
   #main-heading h3 {
-      max-width: 400px;
+      max-width: 500px;
       text-align: justify;
   }
 }
 
 @media (max-width: 425px) {
   #main-heading h3 {
-      max-width: 250px;
-      font-size: 20px ;
+      max-width: 260px;
+      font-size: 18px ;
+   
   }
 }
 
@@ -715,13 +759,16 @@ button a {
   padding: 0 15vw;
   margin-top: 3vw;
   text-align: center;
-  font-size: 14px;
+  font-size: 25px;
   color: rgb(210, 186, 107);
 }
 
 @media screen and (max-width:768px) {
   .main_service h2 {
     font-size: 50px;
+  }
+  .main_service p{
+    font-size: 20px;
   }
 }
 
@@ -754,10 +801,10 @@ button a {
 .servicedata p {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   max-width: 40vh;
   color: rgb(210, 186, 107);
-  margin: auto;
+  margin:30px auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -775,30 +822,45 @@ button a {
     margin: 10px 0;
   }
   .servicedata p {
-    font-size: 16px;
+    font-size: 18px;
     max-width: 80%;
     margin-bottom: 30px;
+    margin: 10px auto;
   }
 }
 
 #resume {
   text-align: center;
+
 }
 
 .r-content h2 {
-  margin-top: 10vh;
-  font-size: 55px;
+  margin-top: 50px;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
-.r-content p {
+.r-content a {
+  text-decoration: none;
+  color: #f4f9ff; /* Change to your desired color */
+  font-size: 25px;
+}
+
+a:hover {
+  text-decoration: underline;
+ 
+}
+
+
+/* .r-content p {
   font-size: 18px;
   max-width: 500px;
-  margin: 20px auto;
-}
+ 
+} */
 
 @media screen and (max-width: 768px) {
   .r-content h2 {
-    font-size: 50px;
+    font-size: 55px;
   }
   .r-content p {
     font-size: 12px;
@@ -915,18 +977,15 @@ button a {
 }
 
 .r-experience p {
-  margin: 30px auto;
-  font-size: 16px;
+  margin: 20px auto;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
   .r-experience h2 {
-    font-size: 25px;
+    font-size: 35px;
   }
-  .r-experience p {
-    font-size: 14px;
-    max-width: 400px;
-  }
+
 }
 
 .r_experiencecontent {
@@ -943,6 +1002,7 @@ button a {
   align-items: center;
 }
 .r-box p {
+  font-size: 20px;
   white-space: nowrap;
 }
 
@@ -971,64 +1031,77 @@ button a {
 }
 
 .rsmall h4 {
-  font-size: 2vh;
+  font-size: 30px;
 }
 
 .rsmall p {
   color: rgb(199, 201, 106);
   margin-top: 10px;
   max-width: 1000px;
-  font-size: 16px;
+  font-size: 25px;
 }
-
+/* 
 .r_skills {
-  padding: 2vw 10vw;
-}
+  padding:40px;
+
+} */
 
 .sresume {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+
   padding: 20px;
 }
 
 .leftskills h3 {
   color: rgb(94, 41, 185);
-  font-size: 3vh;
+  font-size: 25px;
 }
 
 .leftskills h4 {
   margin-top: 20px;
-  font-size: 2.5vh;
+  font-size: 30px;
 }
 
 .leftskills p {
   margin-top: 20px;
-width: 500px;
+/* width: 500px; */
   color: rgb(199, 201, 106);
+  font-size: 20px;
 }
 
 .rightskills h3 {
   color: rgb(94, 41, 185);
-  font-size: 3vh;
+  font-size: 25px;
 }
 
 .rightskills h4 {
   margin-top: 20px;
-  font-size: 2.5vh;
+  font-size: 30px;
 }
 
 .rightskills p {
   margin-top: 20px;
   color: rgb(199, 201, 106);
-  width: 500px;
+  /* width: 500px; */
+  font-size: 20px;
 }
 
+
+
 @media screen and (max-width:1024px) {
+  .sresume{
+    flex-direction: column;
+  }
   .leftskills p{
-    width: 100%;
+    font-size: 18px;
+    max-width: 400px;
+    margin:10px auto;
   }
   .rightskills p{
-    width: 100%;
+    max-width: 400px;
+    margin:10px auto;
+    font-size: 18px;
   }
 }
 
@@ -1131,15 +1204,15 @@ width: 500px;
     border-bottom: 1px solid grey;
   }
   .rsmall p {
-    font-size: 14px;
+    font-size: 20px;
     text-align: justify;
   }
   .e-group {
     border-right: 0;
   }
   .r-experience p {
-    font-size: 14px;
-    max-width: 300px;
+    font-size: 20px;
+    max-width: 400px;
   }
   .r_skills {
     padding: 0;
@@ -1150,4 +1223,11 @@ width: 500px;
     text-align: center;
   }
 
+}
+
+@media (max-width:768px) {
+  .r-experience p {
+    font-size: 18px;
+    max-width: 275px;
+  }
 }

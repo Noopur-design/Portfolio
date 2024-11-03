@@ -207,9 +207,7 @@ body {
   .form {
     max-width: 350px;
   }
-  .form-group button{
 
-  }
 }
 
 .info {
@@ -231,7 +229,7 @@ body {
   font-size: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .info {
     flex-direction: column;
     gap: 50px;
