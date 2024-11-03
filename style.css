@@ -979,6 +979,7 @@ a:hover {
 .r-experience p {
   margin: 20px auto;
   font-size: 25px;
+  max-width: 700px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1065,7 +1066,7 @@ a:hover {
 
 .leftskills p {
   margin-top: 20px;
-/* width: 500px; */
+max-width: 500px;
   color: rgb(199, 201, 106);
   font-size: 20px;
 }
@@ -1083,7 +1084,7 @@ a:hover {
 .rightskills p {
   margin-top: 20px;
   color: rgb(199, 201, 106);
-  /* width: 500px; */
+  max-width: 500px;
   font-size: 20px;
 }
 
